@@ -12,3 +12,7 @@ angular.module("portfolioApp", ['ui.router'])
             templateUrl: "./views/partial-about.html"
         })
 })
+
+// .run(function(e){
+//     console.log(e);
+// })
