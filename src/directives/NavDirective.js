@@ -29,7 +29,7 @@
         return {
             bindToController: true,
             controller: directiveController,
-            templateUrl: "../views/components/nav.html",
+            templateUrl: "../../views/components/nav.html",
             controllerAs: 'Ctrl',
             link: link,
             restrict: 'AE',
