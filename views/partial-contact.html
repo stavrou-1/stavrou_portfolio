@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="grid-12">
+            <nav-directive></nav-directive>
+            <h1>Contact Page!</h1>
+            <fieldset>
+                <form ng-submit="submitForm(contactData)">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" ng-model="contactData.firstname" required/><br/>
+
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" name="lastname" id="lastname" ng-model="contactData.lastname" required/><br/>
+
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" ng-model="contactData.email" required/><br/>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="text" name="phone" id="phone" ng-model="contactData.phone" required/><br/>
+
+                    <label for="inquiry">Inquiry:</label>
+                    <textarea type="textarea" name="inquiry" id="inquiry" ng-model="contactData.inquiry" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+
+                <div ng-model="contactData">
+                    {{contactData}}
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</div>
