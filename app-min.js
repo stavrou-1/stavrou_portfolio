@@ -1,0 +1,1 @@
+angular.module("portfolioApp",["ui.router"]).run(function(o,u){console.log(u)});
