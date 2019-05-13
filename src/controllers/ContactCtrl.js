@@ -5,47 +5,57 @@
         .module('portfolioApp')
         .controller('ContactCtrl', ContactCtrl)
 
-    ContactCtrl.$inject = ['$scope', 'ConstantsService', '$http', '$httpParamSerializer'];
+    ContactCtrl.$inject = ['$scope', 'ConstantsService', '$http'];
 
     /** @ngInject */
-    function ContactCtrl($scope, ConstantsService,$http, $httpParamSerializer) {
+    function ContactCtrl($scope, ConstantsService,$http) {
         var self = this;
-        
+        var contactArray = [];
+        self.processing = false;
+        self.submitted = false;
         self.contactData = {};
+        self.finished = false;
+        self.error = {
+            msg: null,
+            occured: false
+        };
         
         init();
 
-        $scope.submitForm = function(contactData) {
-            var arr = [];
-            arr.push(contactData);
-            // var data = $httpParamSerializer(contactData);
-            // "email=ff&firstname=wefewf&inquiry=fe&lastname=ewfefef&phone=f"
-            // debugger;
-            // return;
-            console.log(contactData);
-            $http({
+        self.submitForm = function(contactData) {
+            self.processing = true;
+            for (var key in contactData) {
+                if (contactData.hasOwnProperty(key)) {
+                    contactArray.push({
+                        name: key,
+                        value: contactData[key]
+                    })
+                }
+            }
+            $.ajax({
                 url: ConstantsService.ssUrl,
                 method: "GET",
-                dataType: "JSON",
-                headers: {
-                    Accept: "application/json, text/plain, */*"
-                },
-                data: contactData
-            })
-            .then(function(response) {
-                console.log(response);
-            })
-            .catch(function(error) {
-                console.log(error);
+                dataType: "json",
+                data: contactArray
+            }).done(function(data) {
+                if (data) {
+                    self.processing = false;  
+                    self.finished = true;
+                }
+            }).fail(function(error) {
+                if (error) {
+                    self.processing = false;
+                    self.error.occured = true;
+                    self.error.msg = "Error: " + (error.message ? error.message : " some unknown error occured");
+                }
+            }).always(function() {
+                self.contactForm = {};
+                $scope.$apply();
             })
         }
 
         function init(){
             console.log(ConstantsService.ssUrl);
-            // console.log(contactData);
-
         }
-
     }
-
 }());

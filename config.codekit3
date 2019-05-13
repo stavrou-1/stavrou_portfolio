@@ -39,6 +39,88 @@
 		"oAP": "/index.html",
 		"oF": 0
 		},
+	"/src/assets/_grid.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/assets/_grid.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/assets/_mixins.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/src/assets/_mixins.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"/src/assets/img/road.jpeg": {
+		"ft": 16384,
+		"iS": 1299980,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/src/assets/img/road.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/src/assets/img/tram.jpeg": {
+		"ft": 16384,
+		"iS": 968909,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/src/assets/img/tram.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/src/assets/img/wave.jpeg": {
+		"ft": 16384,
+		"iS": 672602,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/src/assets/img/wave.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/src/assets/styles.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/assets/styles-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"/src/assets/styles.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "/src/assets/styles.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/src/controllers/ContactCtrl.js": {
 		"bF": 0,
 		"ft": 64,
@@ -72,6 +154,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/src/libs/mui-angular.min.js": {
+		"bF": 0,
+		"ft": 64,
+		"ma": 0,
+		"mi": 0,
+		"oA": 1,
+		"oAP": "/src/libs/mui-angular.min-min.js",
+		"oF": 0,
+		"sC": 0,
+		"tS": 0
+		},
 	"/src/services/ConstantsService.js": {
 		"bF": 0,
 		"ft": 64,
@@ -82,29 +175,6 @@
 		"oF": 0,
 		"sC": 0,
 		"tS": 0
-		},
-	"/styles.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/styles-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"/styles.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "/styles.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		},
 	"/views/components/nav.html": {
 		"cB": 0,

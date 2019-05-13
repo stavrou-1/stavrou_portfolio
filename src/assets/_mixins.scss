@@ -1,0 +1,21 @@
+$break_small: 600px;
+$tablet_up: 768px;
+$break_large: 1024px;
+
+@mixin respond_to($media) {
+    @if $media == handhelds {
+      @media screen and (min-width: $break_small) {
+        @content;
+      }
+    }
+    @else if $media == tablet_screens {
+      @media screen and (min-width: $tablet_up + 1) {
+        @content;
+      }
+    }
+    @else if $media == wide_screens {
+      @media screen and (min-width: $break_large) {
+        @content;
+      }
+    }
+  }

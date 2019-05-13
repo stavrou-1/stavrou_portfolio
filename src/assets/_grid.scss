@@ -1,0 +1,29 @@
+@import "mixins";
+
+$grid-columns: 12;
+
+@for $i from 1 through $grid-columns {
+  .grid-#{$i} {
+    width: 100%;
+  }
+}
+// styles
+[class^='grid-'] {
+  // border: 1px solid;
+  box-sizing: border-box;
+  float: left;
+  padding: 1em 0;
+  text-align: center;
+}
+
+@include respond_to(tablet_screens) {
+  @for $i from 1 through $grid-columns {
+    .grid-#{$i} {
+      width: percentage($i / $grid-columns);
+    }
+  }
+  [class^='grid-'] {
+    padding: 1em;
+  }
+}
+
