@@ -72,13 +72,22 @@
   [class^='grid-'] {
     padding: 1em; } }
 
+footer ul li {
+  display: inline-block;
+  margin: 0.5em 0; }
+  footer ul li a {
+    text-decoration: none;
+    color: black; }
+    footer ul li a:hover {
+      color: #3F6BEE; }
+
 /* Homepage jumbotron */
 .homePageJumbotron {
   height: 80%;
   display: block;
   height: 100vh;
   background-color: #ffffff;
-  background-image: radial-gradient(circle, transparent 40%, #009688 40%, #009688 41%, transparent 0), radial-gradient(circle, transparent 40%, #009688 40%, #009688 41%, transparent 0), radial-gradient(circle, transparent 40%, #009688 40%, #009688 41%, transparent 0), radial-gradient(circle, transparent 40%, #009688 40%, #009688 41%, transparent 0), radial-gradient(circle, transparent 40%, #009688 40%, #009688 41%, transparent 0), radial-gradient(circle, transparent 40%, #009688 40%, #009688 41%, transparent 0), radial-gradient(circle, transparent 40%, #009688 40%, #009688 41%, transparent 0);
+  background-image: radial-gradient(circle, transparent 40%, #3F6BEE 40%, #3F6BEE 41%, transparent 0), radial-gradient(circle, transparent 40%, #3F6BEE 40%, #3F6BEE 41%, transparent 0), radial-gradient(circle, transparent 40%, #3F6BEE 40%, #3F6BEE 41%, transparent 0), radial-gradient(circle, transparent 40%, #3F6BEE 40%, #3F6BEE 41%, transparent 0), radial-gradient(circle, transparent 40%, #3F6BEE 40%, #3F6BEE 41%, transparent 0), radial-gradient(circle, transparent 40%, #3F6BEE 40%, #3F6BEE 41%, transparent 0), radial-gradient(circle, transparent 40%, #3F6BEE 40%, #3F6BEE 41%, transparent 0);
   background-position: 50% 50%;
   background-size: 200% 200%, 150% 150%, 100% 100%, 60% 60%, 40% 40%, 20% 20%, 5% 5%;
   background-repeat: no-repeat;
@@ -121,13 +130,13 @@
   outline: none;
   border-radius: 0.2em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  background-color: #009688;
+  background-color: #3F6BEE;
   color: #ecf0f1;
   cursor: pointer;
   transition: background-color .3s; }
 
 .btn:hover, .btn:focus {
-  background-color: #009688; }
+  background-color: #3F6BEE; }
 
 .btn > * {
   position: relative; }
@@ -159,7 +168,7 @@
   background-image: url(../assets/img/wave.jpeg);
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 2000px rgba(0, 150, 136, 0.5); }
+  box-shadow: inset 0 0 0 2000px rgba(63, 107, 238, 0.8); }
 
 .blockBg {
   width: 100%;
@@ -167,7 +176,7 @@
   text-align: center;
   min-height: 20em;
   background-image: url(../assets/img/tram.jpeg);
-  box-shadow: inset 0 0 0 2000px rgba(0, 150, 136, 0.5);
+  box-shadow: inset 0 0 0 2000px rgba(63, 107, 238, 0.8);
   background-size: cover;
   background-position: center; }
 
@@ -181,9 +190,8 @@
     list-style-type: none; }
 
 h1 {
-  color: #009688;
-  margin: 0;
-  padding: 0.5em; }
+  color: #3F6BEE;
+  margin: 0; }
 
 .btn:active:before {
   width: 120%;
@@ -273,6 +281,13 @@ textarea {
 button[type="submit"] {
   width: 100%; }
 
+.container.padding .grid-6 {
+  cursor: pointer;
+  padding: 5em 1em;
+  min-height: 20em; }
+  .container.padding .grid-6:hover {
+    background-color: rgba(63, 107, 238, 0.3); }
+
 @media screen and (min-width: 600px) {
   body {
     font-size: 2vw; } }
@@ -281,14 +296,21 @@ button[type="submit"] {
   body {
     font-size: 1.2vw; }
   nav ul li a {
-    width: 33%;
+    width: 25%;
+    float: left;
     display: inline-block; }
   .homePageInner {
     top: 30vh;
     margin: 0 auto; } }
 
 @media screen and (min-width: 1024px) {
+  h1 {
+    color: #3F6BEE;
+    margin: 0;
+    padding: 0.5em; }
   .container {
     max-width: 70em;
     margin: 0 auto;
-    padding: 1em 0; } }
+    padding: 1em 0; }
+  .container.padding .grid-6 {
+    padding: 6em 2em; } }

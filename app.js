@@ -15,6 +15,10 @@
                     templateUrl: "./views/partial-home.html",
                     controller: "MainCtrl"
                 })
+                .state("work", {
+                    url: "/work",
+                    templateUrl: "./views/partial-work.html"
+                })
                 .state("about", {
                     url: "/about",
                     templateUrl: "./views/partial-about.html"

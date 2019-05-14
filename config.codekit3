@@ -121,6 +121,14 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/src/assets/yiannis_resume.pdf": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/src/assets/yiannis_resume.pdf",
+		"oF": 0
+		},
 	"/src/controllers/ContactCtrl.js": {
 		"bF": 0,
 		"ft": 64,
@@ -206,6 +214,14 @@
 		"hM": 0,
 		"oA": 0,
 		"oAP": "/views/partial-home.html",
+		"oF": 0
+		},
+	"/views/partial-work.html": {
+		"cB": 0,
+		"ft": 8192,
+		"hM": 0,
+		"oA": 0,
+		"oAP": "/views/partial-work.html",
 		"oF": 0
 		}
 	},
