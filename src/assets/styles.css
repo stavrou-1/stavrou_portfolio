@@ -284,9 +284,11 @@ button[type="submit"] {
 .container.padding .grid-6 {
   cursor: pointer;
   padding: 5em 1em;
-  min-height: 20em; }
+  min-height: 20em;
+  background-color: rgba(63, 107, 238, 0.3); }
   .container.padding .grid-6:hover {
-    background-color: rgba(63, 107, 238, 0.3); }
+    background-color: #ffffff;
+    transition: 0.3s ease-in-out all; }
 
 @media screen and (min-width: 600px) {
   body {

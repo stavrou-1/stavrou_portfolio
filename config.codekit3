@@ -31,6 +31,17 @@
 		"sC": 0,
 		"tS": 0
 		},
+	"/favicon.png": {
+		"ft": 32768,
+		"iS": 41786,
+		"oA": 0,
+		"oAP": "/favicon.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/index.html": {
 		"cB": 0,
 		"ft": 8192,
