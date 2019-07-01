@@ -102,7 +102,7 @@ footer ul li {
     text-decoration: none;
     color: black; }
     footer ul li a:hover {
-      color: #FC4445; }
+      color: #8EE4AF; }
 
 /* Homepage jumbotron */
 .homePageJumbotron {
@@ -110,7 +110,7 @@ footer ul li {
   display: block;
   height: 100vh;
   background-color: #ffffff;
-  background-image: radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0);
+  background-image: radial-gradient(circle, transparent 40%, #97CAEF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0);
   background-position: 50% 50%;
   background-size: 200% 200%, 150% 150%, 100% 100%, 60% 60%, 40% 40%, 20% 20%, 5% 5%;
   background-repeat: no-repeat;
@@ -153,12 +153,12 @@ footer ul li {
   outline: none;
   border-radius: 0.2em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  background-color: #97CAEF;
+  background-color: #07213B;
   color: #ffffff;
   cursor: pointer;
   transition: background-color .3s; }
   .btn.red_btn {
-    background: #FC4445; }
+    background: #07213B; }
 
 .btn > * {
   position: relative; }
@@ -189,7 +189,7 @@ footer ul li {
   text-align: center;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 2000px #FC4445; }
+  box-shadow: inset 0 0 0 2000px #5CDB95; }
 
 .blockBg {
   width: 100%;
