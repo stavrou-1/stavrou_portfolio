@@ -13,14 +13,18 @@ Color Pallete
 */
 .workSection {
   width: 100%;
-  background: gainsboro; }
+  background: #FC4445; }
+.workSection h1,
+.workSection p {
+  color: #FFF;
+}
   .workSection .container {
     padding: 0;
     max-width: 100%; }
     .workSection .container p {
       position: relative;
       top: 0.3vw;
-      color: black; }
+      color: #FFF; }
 
 .compressedLogo {
   height: 1em; }
@@ -102,7 +106,7 @@ footer ul li {
     text-decoration: none;
     color: black; }
     footer ul li a:hover {
-      color: #8EE4AF; }
+      color: #97CAEF; }
 
 /* Homepage jumbotron */
 .homePageJumbotron {
@@ -110,7 +114,7 @@ footer ul li {
   display: block;
   height: 100vh;
   background-color: #ffffff;
-  background-image: radial-gradient(circle, transparent 40%, #97CAEF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0), radial-gradient(circle, transparent 40%, #8EE4AF 40%, #8EE4AF 41%, transparent 0);
+  background-image: radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0), radial-gradient(circle, transparent 40%, #97CAEF 40%, #97CAEF 41%, transparent 0);
   background-position: 50% 50%;
   background-size: 200% 200%, 150% 150%, 100% 100%, 60% 60%, 40% 40%, 20% 20%, 5% 5%;
   background-repeat: no-repeat;
@@ -153,12 +157,12 @@ footer ul li {
   outline: none;
   border-radius: 0.2em;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
-  background-color: #07213B;
+  background-color: #FC4445;
   color: #ffffff;
   cursor: pointer;
   transition: background-color .3s; }
   .btn.red_btn {
-    background: #07213B; }
+    background: #FC4445; }
 
 .btn > * {
   position: relative; }
@@ -189,7 +193,7 @@ footer ul li {
   text-align: center;
   background-size: cover;
   background-position: center;
-  box-shadow: inset 0 0 0 2000px #5CDB95; }
+  box-shadow: inset 0 0 0 2000px #55BCC9; }
 
 .blockBg {
   width: 100%;
@@ -308,7 +312,12 @@ button[type="submit"] {
   min-height: 20em; }
   .container.padding .grid-6:hover {
     background-color: #ffffff;
+    color: #FC4445;
     transition: 0.3s ease-in-out all; }
+  .container.padding .grid-6:hover > p,
+  .container.padding .grid-6:hover > h1 {
+    color: #FC4445;
+  }
 
 @media screen and (min-width: 600px) {
   body {
