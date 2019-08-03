@@ -9,23 +9,24 @@
         </div>
 </div>
 
-<div class="homePageJumbotron">
-    <div class="inner">
-        <div class="container">
-            <div class="row">
-                <div class="grid-12">
-                    <h1>Welcome</h1>
-                    <p>When forced to summarize the general theory of relativity in one sentence: <em>Time and space and gravitation have no seperate existence from matter.</em> <br>- Albert Einstein</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="grid-6">
-                    <button type="submit" ui-sref="work" class="btn red_btn">Work</button>
-                </div>
-                <div class="grid-6">
-                    <button type="submit" ui-sref="contact" class="btn red_btn">Contact Me</button>
-                </div>
+<header class="homepage-header">
+    <div class="container">
+        <div class="row">
+            <div class="grid-12">
+                <h1>Hello I'm Yiannis.</h1>
+                <p>Get to know a little bit about me and view some of the work I've been doing for clients.</p>
             </div>
         </div>
     </div>
-</div>
+</header>
+
+<main class="homepage home-main">
+    <div class="homewrap">
+        <a class="homeleft" ui-sref="work">
+            <button type="submit" ui-sref="contact" class="btn">View Work</button>
+        </a>
+        <a class="homeRight" ui-sref="about">
+            <button type="submit" ui-sref="contact" class="btn">About Me</button>
+        </a>
+    </div>
+</main>

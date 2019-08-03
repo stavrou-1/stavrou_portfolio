@@ -11,12 +11,15 @@ Color Pallete
 #55BCC9; med teal;
 #CAFAFE; blue cream
 */
+h1,h2,h3,h4,h5,h6,p,ul,li,ul li,a,label,input {
+  color: #525252;
+}
 .workSection {
   width: 100%;
-  background: #FC4445; }
+  background: #FFF; }
 .workSection h1,
 .workSection p {
-  color: #FFF;
+  color: #525252;
 }
   .workSection .container {
     padding: 0;
@@ -24,7 +27,7 @@ Color Pallete
     .workSection .container p {
       position: relative;
       top: 0.3vw;
-      color: #FFF; }
+      color: #525252; }
 
 .compressedLogo {
   height: 1em; }
@@ -104,7 +107,10 @@ footer ul li {
   margin: 0.5em 0; }
   footer ul li a {
     text-decoration: none;
-    color: black; }
+    color: #525252; }
+  footer ul li span {
+    color: #525252;
+  }
     footer ul li a:hover {
       color: #97CAEF; }
 
@@ -200,10 +206,25 @@ footer ul li {
   padding: 7em;
   text-align: center;
   min-height: 20em;
-  background-image: url(../assets/img/skyline_mpls.png);
-  box-shadow: inset 0 0 0 2000px rgba(151, 202, 239, 0.4);
+  background-image: url(./img/germany.jpg);
   background-size: cover;
-  background-position: center; }
+  background-repeat: no-repeat;
+  background-position: center; 
+  position: relative;
+}
+
+.blockBg::after {
+  background-color: #FFF;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.8;
+}
 
 .wht {
   color: #ffffff; }
@@ -215,7 +236,7 @@ footer ul li {
     list-style-type: none; }
 
 h1 {
-  color: black;
+  color: #525252;
   margin: 0; }
 
 .btn:active:before {
@@ -234,7 +255,7 @@ h1 {
   background-color: #d35400; }
 
 .btn.red {
-  background-color: #e74c3c; }
+  background-color: #7ECCA8; }
 
 .btn.red:hover, .btn.red:focus {
   background-color: #c0392b; }
@@ -310,14 +331,94 @@ button[type="submit"] {
   cursor: pointer;
   padding: 5em 1em;
   min-height: 20em; }
-  .container.padding .grid-6:hover {
-    background-color: #ffffff;
-    color: #FC4445;
-    transition: 0.3s ease-in-out all; }
-  .container.padding .grid-6:hover > p,
-  .container.padding .grid-6:hover > h1 {
-    color: #FC4445;
-  }
+
+
+/* New Homepage */
+main.homepage.home-main {
+  display: block;
+  width: 100%;
+  background: gray;
+  display: block;
+}
+
+main.homepage.home-main .homewrap .homeleft {
+  background: url(./img/opt2.jpg);
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  float: none;
+  padding: 10em 5em;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+main.homepage.home-main .homewrap .contact-full {
+  background: url(./img/opt2.jpg);
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  float: none;
+  padding: 10em 5em;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+main.homepage.home-main .homewrap .homeRight {
+  background: url(./img/workspace.jpg);
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  float: none;
+  padding: 10em 5em;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+}
+
+main.homepage.home-main .homewrap .homeleft button,
+main.homepage.home-main .homewrap .homeRight button,
+main.homepage.home-main .homewrap .contact-full button {
+  z-index: 3;
+}
+main.homepage.home-main .homewrap .homeleft::after,
+main.homepage.home-main .homewrap .homeRight::after,
+main.homepage.home-main .homewrap .contact-full::after {
+  background-color: #FFF;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+main.homepage.home-main .homewrap .homeleft *,
+main.homepage.home-main .homewrap .homeRight * {
+  color: #FFF;
+}
+main.homepage.home-main .homewrap .homeleft {
+  /* background: #55BCC9; */
+}
+main.homepage.home-main .homewrap .homeRight {
+  /* background: #55BCC9; */
+}
 
 @media screen and (min-width: 600px) {
   body {
@@ -332,11 +433,37 @@ button[type="submit"] {
     display: inline-block; }
   .homePageInner {
     top: 30vh;
-    margin: 0 auto; } }
+    margin: 0 auto; } 
+
+  /* New Homepage */
+  main.homepage.home-main {
+    display: block;
+    width: 100%;
+    background: gray;
+    display: inline-block;
+  }
+  main.homepage.home-main .homewrap .homeleft {
+    width: 50%;
+    /* background: #55BCC9; */
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+  }
+  main.homepage.home-main .homewrap .homeRight {
+    width: 50%;
+    /* background: #55BCC9; */
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+  }  
+  main.homepage.home-main .homewrap .homeleft,
+  main.homepage.home-main .homewrap .homeRight {
+    padding: 21vw 10vw;
+  }
+}
 
 @media screen and (min-width: 1024px) {
   h1 {
-    color: black;
     margin: 0;
     padding: 0.5em; }
   .container {
